@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.js.phonicdiary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--录音权限-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--SD卡读写权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--指纹识别-->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name=".DiaryApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.js.phonicdiary.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <activity
+            android:name=".activity.StartActivity"
+            android:theme="@style/BaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activity.EditActivity"
+            android:theme="@style/EditTheme"
+            android:windowSoftInputMode="adjustUnspecified" />
+        <activity
+            android:name=".activity.VoiceActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.lock.LockActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.lock.LockSettingActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.PageSettingActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.AboutSettingActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.backup.BackupActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.backup.BackupFileActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

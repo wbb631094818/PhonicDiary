@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/window_background"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <com.bilibili.magicasakura.widgets.TintImageView
+                android:id="@+id/search_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/card_foreground"
+                android:padding="12dp"
+                android:src="@drawable/ic_back_white_24dp"
+                app:imageTint="@color/theme_color_icon" />
+
+            <com.bilibili.magicasakura.widgets.TintEditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="48dp"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxHeight="48dp"
+                android:maxLines="1"
+                android:textColor="@color/theme_color_title"
+                android:textColorHint="@color/theme_color_message"
+                android:textSize="16sp"
+                android:theme="@style/EditTextAppTheme" />
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp" />
+
+        <com.bilibili.magicasakura.widgets.TintProgressBar
+            android:id="@+id/search_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:visibility="gone" />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/search_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:text="@string/Content_not_searched"
+            android:textColor="@color/theme_color_message"
+            android:visibility="gone" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

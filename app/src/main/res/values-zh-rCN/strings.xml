@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">有声日记</string>
+    <string name="tip">提示</string>
+    <string name="Whether_to_delete_the_picture">是否删除图片</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="Delete">删除</string>
+    <string name="Open_with">打开方式</string>
+    <string name="time_is_too_short">时间太短了</string>
+    <string name="No_recording_file">没有录音文件</string>
+    <string name="Today">今天</string>
+    <string name="today">今天</string>
+    <string name="Yesterday">昨天</string>
+    <string name="This_week">这周</string>
+    <string name="This_month">这月</string>
+    <string name="search">搜索</string>
+
+    <string name="please_enter_passcode">输入4位数字的密码</string>
+    <string name="lock_input_again">重新输入新密码</string>
+    <string name="lock_input_not_match">密码不匹配。</string>
+    <string name="Passcode_is_correct">密码正确.</string>
+    <string name="Password_set_successfully">密码设置成功</string>
+
+
+    <string name="About">关于</string>
+    <string name="Version">版本</string>
+    <string name="rate_us">评分</string>
+    <string name="help_feedback">帮助&amp;反馈</string>
+    <string name="share">分享</string>
+    <string name="Share_Phonic_Diary">分享 有声笔记</string>
+    <string name="Get_Phonic_Diary">有声笔记</string>
+    <string name="backup">备份</string>
+    <string name="restoring_data">恢复数据</string>
+    <string name="back_up_data">备份数据</string>
+    <string name="automatic_data_backup">自动备份数据</string>
+    <string name="back_up_path">备份路径</string>
+    <string name="Backup_file">本地备份</string>
+    <string name="Data_backup_completed">数据备份完成.</string>
+    <string name="Failure">失败</string>
+    <string name="no_zip_file">不是正确的备份文件</string>
+    <string name="load_file_erro">加载文件失败.</string>
+    <string name="Loading">加载中…</string>
+    <string name="backuping">备份中…</string>
+    <string name="successfully">successfully</string>
+    <string name="Content_not_searched">未搜索到内容</string>
+
+</resources>

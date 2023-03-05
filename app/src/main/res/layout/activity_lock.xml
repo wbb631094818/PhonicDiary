@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.js.phonicdiary.view.passcodeview.PasscodeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lock_passcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:firstInputTip="@string/please_enter_passcode"
+    app:normalStateColor="@color/theme_color_icon"
+    app:passcodeLength="4"
+    app:passcodeViewType="set_passcode"
+    app:secondInputTip="@string/lock_input_again"
+    app:wrongInputTip="@string/lock_input_not_match"
+    app:wrongLengthTip="@string/please_enter_passcode" />

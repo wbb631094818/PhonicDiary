@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/theme_color_primary"
+        android:elevation="6dp"
+        android:gravity="center_vertical">
+
+        <com.bilibili.magicasakura.widgets.TintImageView
+            android:id="@+id/backup_black"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/card_foreground"
+            android:padding="12dp"
+            android:src="@drawable/ic_back_white_24dp"
+            app:imageTint="@color/theme_color_icon" />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/backup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/backup"
+            android:textColor="@color/theme_color_title"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/window_background" />
+
+    <FrameLayout
+        android:id="@+id/backup_auto_click"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/automatic_data_backup"
+            android:textColor="@color/theme_color_title"
+            android:textSize="16sp" />
+
+        <com.bilibili.magicasakura.widgets.TintSwitchCompat
+            android:id="@+id/backup_auto_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:clickable="false" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/window_background" />
+
+    <FrameLayout
+        android:id="@+id/backup_data_click"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/back_up_data"
+            android:textColor="@color/theme_color_title"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/window_background" />
+
+    <FrameLayout
+        android:id="@+id/backup_restoring_click"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/restoring_data"
+            android:textColor="@color/theme_color_title"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/window_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/back_up_path"
+            android:textColor="@color/theme_color_title"
+            android:textSize="16sp" />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/backup_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_color_message"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/window_background" />
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:id="@+id/backup_file"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/Backup_file"
+        android:textColor="@color/theme_color_title"
+        android:textSize="16sp" />
+</LinearLayout>

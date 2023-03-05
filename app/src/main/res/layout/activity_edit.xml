@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toos="http://schemas.android.com/tools"
+    android:id="@+id/edit_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/theme_color_primary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!--滑动的部分-->
+            <FrameLayout
+                android:id="@+id/edit_photo_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_collapseMode="parallax">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/edit_photo_rlv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/theme_color_primary"
+                    toos:listitem="@layout/item_edit_banner" />
+
+                <TextView
+                    android:id="@+id/edit_photo_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/theme_color_title"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <!--标题-->
+            <com.bilibili.magicasakura.widgets.TintToolbar
+                android:id="@+id/edit_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.bilibili.magicasakura.widgets.TintImageView
+                        android:id="@+id/edit_back"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical|start"
+                        android:background="@drawable/card_foreground"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_back_white_24dp"
+                        app:imageTint="@color/theme_color_icon" />
+
+                    <com.bilibili.magicasakura.widgets.TintImageView
+                        android:id="@+id/edit_photo"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="48dp"
+                        android:layout_marginRight="48dp"
+                        android:background="@drawable/card_foreground"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_add_photo_white_24dp"
+                        app:imageTint="@color/theme_color_icon" />
+
+                    <com.bilibili.magicasakura.widgets.TintImageView
+                        android:id="@+id/edit_done"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:background="@drawable/card_foreground"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_done_white_24dp"
+                        app:imageTint="@color/theme_color_icon" />
+
+                    <com.bilibili.magicasakura.widgets.TintImageView
+                        android:id="@+id/edit_edit"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:background="@drawable/card_foreground"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_edit_white_24dp"
+                        app:imageTint="@color/theme_color_icon" />
+                </FrameLayout>
+            </com.bilibili.magicasakura.widgets.TintToolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/edit_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="48dp"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.bilibili.magicasakura.widgets.TintTextView
+                    android:id="@+id/edit_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_color_message"
+                    android:textSize="14sp"
+                    android:theme="@style/EditTextAppTheme" />
+
+                <com.bilibili.magicasakura.widgets.TintEditText
+                    android:id="@+id/edit_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@null"
+                    android:lines="1"
+                    android:textColor="@color/theme_color_message"
+                    android:textSize="14sp"
+                    android:theme="@style/EditTextAppTheme" />
+            </LinearLayout>
+
+            <com.bilibili.magicasakura.widgets.TintEditText
+                android:id="@+id/edit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:hint="标题"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:nextFocusForward="@id/edit_message"
+                android:singleLine="true"
+                android:textColor="@color/theme_color_title"
+                android:textColorHint="@color/theme_color_message"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/EditTextAppTheme" />
+
+            <com.bilibili.magicasakura.widgets.TintEditText
+                android:id="@+id/edit_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="输入内容"
+                android:inputType="none"
+                android:minHeight="200dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/theme_color_title"
+                android:textColorHint="@color/theme_color_message"
+                android:textSize="14sp"
+                android:theme="@style/EditTextAppTheme" />
+
+            <TextView
+                android:id="@+id/edit_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableStart="@drawable/ic_label_white_12dp"
+                android:drawablePadding="4dp"
+                android:text="选择标签"
+                android:textColor="@color/theme_color_message"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/edit_mood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableStart="@drawable/ic_heartbeat_white_12dp"
+                android:drawablePadding="4dp"
+                android:text="选择心情"
+                android:textColor="@color/theme_color_message"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/edit_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableStart="@drawable/ic_room_white_12dp"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:text="选择地址"
+                android:textColor="@color/theme_color_message"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="48dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/edit_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_mic_white_24dp"
+                app:backgroundTint="@color/theme_color_F0474A"
+                app:fabCustomSize="48dp"
+                app:rippleColor="#33FFFFFF" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/edit_voice_count"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_circle_white"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0"
+            android:textColor="@color/theme_color"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_action_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/theme_color_primary"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <com.bilibili.magicasakura.widgets.TintImageView
+            android:id="@+id/edit_undo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/card_foreground"
+            android:padding="12dp"
+            android:src="@drawable/ic_undo_white_24dp"
+            app:imageTint="@color/theme_color_icon" />
+
+        <com.bilibili.magicasakura.widgets.TintImageView
+            android:id="@+id/edit_redo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/card_foreground"
+            android:padding="12dp"
+            android:src="@drawable/ic_redo_white_24dp"
+            app:imageTint="@color/theme_color_icon" />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/edit_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="字数:0"
+            android:textColor="@color/theme_color_message"
+            android:textSize="14sp" />
+
+        <com.bilibili.magicasakura.widgets.TintImageView
+            android:id="@+id/edit_save"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/card_foreground"
+            android:padding="12dp"
+            android:src="@drawable/ic_done_white_24dp"
+            app:imageTint="@color/theme_color_icon" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

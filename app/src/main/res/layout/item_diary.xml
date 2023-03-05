@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_diary_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/card_foreground"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/item_diary_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/theme_color_message"
+            android:textSize="12sp" />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/item_diary_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_color_message"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/item_diary_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/theme_color_message"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.bilibili.magicasakura.widgets.TintTextView
+                android:id="@+id/item_diary_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/theme_color_title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.bilibili.magicasakura.widgets.TintTextView
+                android:id="@+id/item_diary_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/theme_color_message"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <com.bilibili.magicasakura.widgets.TintTextView
+                    android:id="@+id/item_diary_image_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:drawableStart="@drawable/ic_photo_white_12dp"
+                    android:drawableLeft="@drawable/ic_photo_white_12dp"
+                    android:drawablePadding="2dp"
+                    android:text="1"
+                    android:textColor="@color/theme_color_message"
+                    android:textSize="12sp"
+                    app:drawableLeftTint="@color/theme_color_icon" />
+
+                <com.bilibili.magicasakura.widgets.TintTextView
+                    android:id="@+id/item_diary_voice_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_mic_white_12dp"
+                    android:drawableLeft="@drawable/ic_mic_white_12dp"
+                    android:drawablePadding="2dp"
+                    android:text="5"
+                    android:textColor="@color/theme_color_message"
+                    android:textSize="12sp"
+                    app:drawableLeftTint="@color/theme_color_icon" />
+
+                <com.bilibili.magicasakura.widgets.TintTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_photo_white_12dp"
+                    android:drawableLeft="@drawable/ic_photo_white_12dp"
+                    android:text="110"
+                    android:textColor="@color/theme_color_message"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:drawableLeftTint="@color/theme_color_icon" />
+
+                <com.bilibili.magicasakura.widgets.TintTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_photo_white_12dp"
+                    android:drawableLeft="@drawable/ic_photo_white_12dp"
+                    android:text="2"
+                    android:textColor="@color/theme_color_message"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:drawableLeftTint="@color/theme_color_icon" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_diary_image"
+            android:layout_width="80dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/window_background"
+        android:visibility="visible" />
+</androidx.cardview.widget.CardView>

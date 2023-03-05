@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_primary"
+    android:orientation="vertical">
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="APP设置"
+        android:textColor="@color/theme_color_message"
+        android:textSize="14sp" />
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:id="@+id/setting_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableStart="@drawable/ic_lock_gray_24dp"
+        android:drawableLeft="@drawable/ic_lock_gray_24dp"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="密码设置"
+        android:textColor="@color/theme_color_title"
+        android:textSize="16sp"
+        app:drawableLeftTint="@color/theme_color_icon" />
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:visibility="gone"
+        android:id="@+id/setting_theme"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableStart="@drawable/ic_color_gray_24dp"
+        android:drawableLeft="@drawable/ic_color_gray_24dp"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="更改主题"
+        android:textColor="@color/theme_color_title"
+        android:textSize="16sp"
+        app:drawableLeftTint="@color/theme_color_icon" />
+
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:id="@+id/setting_backup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableStart="@drawable/ic_backup_gray_24dp"
+        android:drawableLeft="@drawable/ic_backup_gray_24dp"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="数据备份与恢复"
+        android:textColor="@color/theme_color_title"
+        android:textSize="16sp"
+        app:drawableLeftTint="@color/theme_color_icon" />
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:id="@+id/setting_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableStart="@drawable/ic_edit_white_24dp"
+        android:drawableLeft="@drawable/ic_edit_white_24dp"
+        android:drawablePadding="32dp"
+        app:drawableTint="@color/theme_color_message"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="页面布局"
+        android:textColor="@color/theme_color_title"
+        android:textSize="16sp"
+        app:drawableLeftTint="@color/theme_color_icon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/window_background" />
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="存储路径"
+        android:textColor="@color/theme_color_message"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <com.bilibili.magicasakura.widgets.TintImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_mic_white_24dp"
+            app:imageTint="@color/theme_color_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="56dp"
+            android:orientation="vertical">
+
+            <com.bilibili.magicasakura.widgets.TintTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="录音"
+                android:textColor="@color/theme_color_title"
+                android:textSize="16sp" />
+
+            <com.bilibili.magicasakura.widgets.TintTextView
+                android:id="@+id/setting_voice_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="录音文件路径"
+                android:textColor="@color/theme_color_message"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/window_background" />
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/About"
+        android:textColor="@color/theme_color_message"
+        android:textSize="14sp" />
+
+
+    <com.bilibili.magicasakura.widgets.TintTextView
+        android:id="@+id/setting_info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableStart="@drawable/ic_info_gray_24dp"
+        android:drawableLeft="@drawable/ic_info_gray_24dp"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="关于有声日记"
+        android:textColor="@color/theme_color_title"
+        android:textSize="16sp"
+        app:drawableLeftTint="@color/theme_color_icon" />
+
+
+</LinearLayout>

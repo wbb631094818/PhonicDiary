@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/backup_file_click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/card_foreground">
+
+    <com.bilibili.magicasakura.widgets.TintImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="12dp"
+        app:imageTint="@color/theme_color_icon"
+        android:src="@drawable/ic_zip_red_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/backup_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="file name"
+            android:textColor="@color/theme_color_title"
+            android:textSize="14sp" />
+
+        <com.bilibili.magicasakura.widgets.TintTextView
+            android:id="@+id/backup_file_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="2019/8/13 - 10.1MB"
+            android:textColor="@color/theme_color_message"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.bilibili.magicasakura.widgets.TintImageView
+        android:id="@+id/backup_file_more"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical|end"
+        android:background="@drawable/card_foreground"
+        android:padding="12dp"
+        app:imageTint="@color/theme_color_icon"
+        android:src="@drawable/ic_more_white_24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/theme_color_primary_dark" />
+</FrameLayout>

@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_photo"
+        android:icon="@drawable/ic_add_photo_white_24dp"
+        android:iconTint="@color/theme_color_icon"
+        android:title="Add Photos"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_done_white_24dp"
+        android:iconTint="@color/theme_color_icon"
+        android:title="save"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:iconTint="@color/theme_color_icon"
+        android:visible="false"
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_edit_white_24dp"
+        android:title="edit"
+        app:showAsAction="ifRoom" />
+</menu>
+
+

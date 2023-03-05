@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Phonic Diary</string>
+    <string name="tip">提示</string>
+    <string name="Whether_to_delete_the_picture">Whether to delete the picture</string>
+    <string name="cancel">cancel</string>
+    <string name="delete">delete</string>
+    <string name="Delete">Delete</string>
+    <string name="Open_with">Open with</string>
+    <string name="time_is_too_short">time is too short</string>
+    <string name="No_recording_file">No recording file</string>
+    <string name="Today">Today</string>
+    <string name="today">today</string>
+    <string name="Yesterday">Yesterday</string>
+    <string name="This_week">This week</string>
+    <string name="This_month">This month</string>
+    <string name="search">Search</string>
+
+    <string name="please_enter_passcode">Enter a passcode of 4 digits</string>
+    <string name="lock_input_again">Re-enter new passcode</string>
+    <string name="lock_input_not_match">Passcodes do not match.</string>
+    <string name="Passcode_is_correct">Passcode is correct.</string>
+    <string name="Password_set_successfully">Password set successfully</string>
+
+
+    <string name="About">About</string>
+    <string name="Version">Version</string>
+    <string name="rate_us">Rate us</string>
+    <string name="help_feedback"><![CDATA[Help & feedback]]></string>
+    <string name="share">Share</string>
+    <string name="Share_Phonic_Diary">Share Phonic Diary</string>
+    <string name="Get_Phonic_Diary">Get Phonic Diary</string>
+    <string name="backup">Backup</string>
+    <string name="restoring_data">Restoring data</string>
+    <string name="back_up_data">Back up data</string>
+    <string name="Backup_file">Local backup</string>
+    <string name="automatic_data_backup">Automatic data backup</string>
+    <string name="back_up_path">Back up path</string>
+    <string name="Data_backup_completed">Data backup completed.</string>
+    <string name="Failure">Failure</string>
+    <string name="no_zip_file">不是正确的备份文件</string>
+    <string name="load_file_erro">加载文件失败.</string>
+    <string name="Loading">Loading…</string>
+    <string name="backuping">备份中…</string>
+    <string name="successfully">successfully</string>
+    <string name="Content_not_searched">未搜索到内容</string>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#36393E</color>
+    <color name="colorPrimaryDark">#2B2E33</color>
+    <color name="colorAccent">#2B2E33</color>
+
+
+    <!--<color name="theme_color_primary">#36393E</color>-->
+    <!--<color name="theme_color_primary_dark">#2B2E33</color>-->
+    <!--<color name="theme_color_primary_trans">#2B2E33</color>-->
+    <color name="theme_color_bg">#36393E</color>
+
+
+    <color name="theme_color_7C7F84">#7C7F84</color>
+    <color name="theme_color_FCFDFF">#FCFDFF</color>
+    <color name="theme_color_35383D">#35383D</color>
+    <color name="theme_color_F0474A">#F0474A</color>
+
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="theme_color">#F0474A</color>
+    <color name="theme_color_tab_title">#747474</color>
+    <color name="window_background">#F4F4F4</color>
+    <color name="window_background2">#FFFFFF</color>
+    <color name="click_background">#E9E9E9</color>
+
+
+    <color name="theme_color_primary">#FFFFFF</color>
+    <color name="theme_color_primary_dark">#FFFFFF</color>
+    <color name="theme_color_primary_trans">#99f0486c</color>
+    <color name="theme_color_title">#313131</color>
+    <color name="theme_color_message">#909090</color>
+    <color name="theme_color_icon">#707070</color>
+
+</resources>
